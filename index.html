@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+      <!-- styling Css -->
+      <style>
+          *{
+              margin: 0;
+              padding: 0;
+              box-sizing: 0;
+              font-family: sans-serif;
+          }
+          .main{
+              width: 100vw;
+              height: 100vh;
+              background: #dfe6e9;
+              color: #fff;
+          }
+          h1{
+              font-size: 4rem;
+              padding: 50px 0;
+               text-align: center;
+              color: #000;
+          }
+          p{
+              text-align: center;
+          }
+          .parent{
+              width: 80vw;
+           
+              
+              margin: auto;
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+              transition: all 0.2 linear;
+          }
+          .child{
+             
+              height: 200px;
+              background-color: #2C3A47;
+              box-shadow: 0 0 20px #bac3c3;
+              flex: 1 1 200px;
+              margin: 20px;
+           
+
+          }
+          .child:first-child{
+            background-color: #82589F;
+            text-align: center;
+          }
+          .child:last-child{
+             background-color: #FC427B;
+          }
+
+          @media(max-width:768px){
+              .main{
+                  height: auto;
+              }
+          }
+      </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Services</h1>
+        <div class="parent">
+            <div class="child">
+                <p>Gulshan Kathare</p>
+            </div>
+            <div class="child">
+                <p>Gulshan Kathare</p>
+            </div>
+            <div class="child">
+                <p>Gulshan Kathare</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
